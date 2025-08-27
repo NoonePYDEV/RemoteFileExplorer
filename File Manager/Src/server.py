@@ -7,22 +7,6 @@ import threading
 import ctypes
 import webbrowser
 
-if not os.path.exists(".\\opened.open"):
-    root = ctk.CTk()
-    root.withdraw()
-    root.attributes("-topmost", True)
-
-    if messagebox.askyesno("Vite fait", "Avant de lancer mon tool tu veux bien visiter mon shop ? C'est la seule fois que je te le demanderais, la prochaine fois que tu lanceras le tool tu n'auras pas ce message."):
-        webbrowser.open("https://hellcatstore.mysellauth.com")
-        webbrowser.open("https://t.me/hellcatrat")
-    else:
-        messagebox.showinfo("Allo selem", "Bruh azz jte retiens")
-    
-    with open(".\\opened.open", "w", encoding='utf-8') as F:
-        F.write(" ")
-    
-    root.destroy()
-
 scaleFactor = ctypes.windll.shcore.GetScaleFactorForDevice(0)
 
 Server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -293,5 +277,6 @@ MainFrame = ctk.CTkScrollableFrame(Explorer, height=425, width=600, fg_color="#1
 MainFrame.place(y=50, x=25)
 
 threading.Thread(target=Listen, daemon=True).start()
+
 
 Explorer.mainloop()
