@@ -1,4 +1,4 @@
-# 📁 Explorateur de fichier à distance
+# 📁 Explorateur de fichiers à distance
 
 **Cet outil vous permet de gérer, récupérer, et suprimmer des fichiers sur un appareil distant.**
 
